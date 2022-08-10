@@ -8,7 +8,7 @@
     {{-- you have a role model for use this --}}
     {{-- input select for role 
     <x-inputs.select 
-        placeholder="Selectionner..." 
+        placeholder="Selectionner un role" 
         name="role" 
         :entities="$roles"
     /> --}}
