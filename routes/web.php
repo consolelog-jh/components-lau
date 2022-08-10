@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $roles = Role::all();
-    return view('welcome', ['roles' => $roles]);
+    //$roles = Role::all();
+    return view('welcome');
 });
