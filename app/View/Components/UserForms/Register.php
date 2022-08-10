@@ -7,13 +7,20 @@ use Illuminate\View\Component;
 class Register extends Component
 {
     /**
+     * list roles
+     *
+     * @var [type]
+     */
+    public $roles;
+
+    /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($roles = null)
     {
-        //
+        $this->roles = $roles;
     }
 
     /**

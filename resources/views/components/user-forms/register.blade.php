@@ -4,8 +4,14 @@
     up-submit
     action="{{-- {{ route('register') }} --}}"
 >
+
+    {{-- you have a role model for use this --}}
     {{-- input select for role 
-    <x-inputs.select-role required/> --}}
+    <x-inputs.select 
+        placeholder="Selectionner..." 
+        name="role" 
+        :entities="$roles"
+    /> --}}
     
     {{-- firstName 
     <x-inputs.sample
