@@ -122,5 +122,57 @@
 <a {{ $attributes }} >
     {{ $slot }}
 </a>
+```  
+
+## btn  
+
+- `x-btn.btn-form`  
+> change in `tailwind.config.js`  
+> colors : `tbtnform` `tbtnformh` `tbtnformd`  
+> `tbtnformhd` `bgbtnform` `bgbtnformh` `bgbtnformd` `bgbtnformhd`  
+> size text : `s-btnform`  
+```html
+<!-- add class on div global component -->
+<x-btn.btn-form class-div="">
+    <!-- your text of btn -->
+</x-btn.btn-form>
+
+<!-- add type of btn, default "submit" -->
+<x-btn.btn-form type="">
+    <!-- your text of btn -->
+</x-btn.btn-form>
+
+<!-- add class on button balise -->
+<x-btn.btn-form class-btn="">
+    <!-- your text of btn -->
+</x-btn.btn-form>
+
+<!-- slot -->
+<button {{ $attributes }}>{{ $slot }}</button>
+```  
+
+- `x-btn.btn-sample`  
+> change in `tailwind.config.js`  
+> colors : `tbtnsample` `tbtnsampleh` `tbtnsampled`  
+> `tbtnsamplehd` `bgbtnsample` `bgbtnsampleh` `bgbtnsampled` `bgbtnsamplehd`  
+> size text : `s-btnsample`  
+```html
+<!-- add class on div global component -->
+<x-btn.btn-form class-div="">
+    <!-- your text of btn -->
+</x-btn.btn-form>
+
+<!-- add type of btn, default "button" -->
+<x-btn.btn-form type="">
+    <!-- your text of btn -->
+</x-btn.btn-form>
+
+<!-- add class on button balise -->
+<x-btn.btn-form class-btn="">
+    <!-- your text of btn -->
+</x-btn.btn-form>
+
+<!-- slot -->
+<button {{ $attributes }}>{{ $slot }}</button>
 ```
 
