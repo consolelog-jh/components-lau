@@ -27,6 +27,37 @@
 <input {{ $attributes }} />
 ```  
 
+- `x-inputs.select`  
+> change in `tailwind.config.js`
+> these are the same variable as for  
+> the input sample and the label
+```html
+<!-- placeholder for option's select inpur -->
+<x-inputs.select 
+    placeholder="Selectionner..."
+/>
+
+<!-- name for option's select input -->
+<x-inputs.select  
+    name="" 
+/>
+
+<!-- label of input -->
+<x-inputs.select  
+    label="" 
+/>
+
+<!-- selected for select one option init -->
+<x-inputs.select  
+    selected="" 
+/>
+
+<!-- entities for model for select input -->
+<x-inputs.select
+    :entities="$roles"
+/>
+```
+
 ## Title
 > change in tailwind.config.js  
 > size : `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
@@ -187,9 +218,12 @@
 ## user forms  
 
 - `x-user-forms.register`  
-> no props, comment or comment out inputs  
 > commented out depending on your user model  
 > uncomment form actions once fortify install  
+```html
+<!-- add model roles for input select -->
+<x-user-forms.register :roles="$roles" />
+```  
 
 - `x-user-forms.login`  
 > uncomment form actions once fortify install  
@@ -214,4 +248,11 @@
 > uncomment form actions once fortify install  
 
 - `x-user-forms.forgot-password`   
-> uncomment form actions once fortify install
+> uncomment form actions once fortify install  
+
+## files auth for fortyfi  
+
+- copy / paste folder auth in `resources/views/auth`  
+> this files is blank  
+
+
