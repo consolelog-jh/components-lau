@@ -2,7 +2,7 @@
     {{-- label --}}
     @if ($label)
         <label 
-            for="{{ $label }}" 
+            for="{{ $label . $name }}" 
             class="
             block 
             mb-2 
