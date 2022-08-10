@@ -84,7 +84,6 @@
 
 - `x-links.text-icon-arrow`  
 > component link text sample with icon left or right  
-> and underline with hover
 ```html
 <!-- add class on balise 'a' -->
 <x-links.text-icon-arrow class-a="">
@@ -101,6 +100,11 @@
     <!-- your link -->
 </x-links.text-icon-arrow>
 
+<!-- change size of text -->
+<x-links.text-icon-arrow text-size="">
+    <!-- your link -->
+</x-links.text-icon-arrow>
+
 <!-- attributes on balise 'a' -->
 <!-- slot in balise 'a' -->
 <a {{ $attributes }} >
@@ -110,19 +114,23 @@
 
 - `x-links.text-sample`  
 > component link text sample 
-> and underline with hover 
 ```html
 <!-- add class on balise 'a' -->
 <x-links.text-sample class-a="">
     <!-- your link -->
 </x-links.text-samp>
 
+<!-- change size of text -->
+<x-links.text-icon-arrow text-size="">
+    <!-- your link -->
+</x-links.text-icon-arrow>
+
 <!-- attributes on balise 'a' -->
 <!-- slot in balise 'a' -->
 <a {{ $attributes }} >
     {{ $slot }}
 </a>
-```  
+```
 
 ## btn  
 
@@ -174,5 +182,36 @@
 
 <!-- slot -->
 <button {{ $attributes }}>{{ $slot }}</button>
-```
+```  
 
+## user forms  
+
+- `x-user-forms.register`  
+> no props, comment or comment out inputs  
+> commented out depending on your user model  
+> uncomment form actions once fortify install  
+
+- `x-user-forms.login`  
+> uncomment form actions once fortify install  
+> uncomment href on link forgot password
+
+- `x-user-forms.logout`  
+```html
+<!-- add anything in slot (icon, text etc...) -->
+<!-- attributes on button balise -->
+<button {{ $attributes }}>
+        {{ $slot }}
+</button>
+```  
+
+- `x-user-forms.reset-password`  
+> uncomment form actions once fortify install  
+
+- `x-user-forms.update-profil`  
+> uncomment form actions once fortify install  
+
+- `x-user-forms.verify-email`  
+> uncomment form actions once fortify install  
+
+- `x-user-forms.forgot-password`   
+> uncomment form actions once fortify install
