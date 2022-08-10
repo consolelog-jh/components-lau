@@ -14,14 +14,23 @@ class TextSample extends Component
     public $classA;
 
     /**
+     * for text size of link
+     *
+     * @var string|null
+     */
+    public $textSize;
+
+    /**
      * Create a new component instance.
      *
      * @return void
      */
     public function __construct(
         $classA = null,
+        $textSize = null,
     ) {
         $this->classA = $classA;
+        $this->textSize = $textSize;
     }
 
     /**

@@ -27,6 +27,14 @@ class TextIconArrow extends Component
      */
     public $classA;
 
+
+    /**
+     * for text size of link
+     *
+     * @var string|null
+     */
+    public $textSize;
+
     /**
      * Create a new component instance.
      *
@@ -36,10 +44,12 @@ class TextIconArrow extends Component
         $isIconFront = false,
         $isIconBack = false,
         $classA = null,
+        $textSize = null,
     ) {
         $this->isIconBack = $isIconBack;
         $this->isIconFront = $isIconFront;
         $this->classA = $classA;
+        $this->textSize = $textSize;
     }
 
     /**

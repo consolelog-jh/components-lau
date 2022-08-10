@@ -1,15 +1,14 @@
 <a 
     {{ $attributes }} 
     class="
-    {{ $classA }} 
     relative 
     flex 
     items-center 
-    text-s-linkiconarrow 
+    {{ $textSize ?? 'text-s-linkiconarrow' }}
     text-linkiconarrow 
     dark:text-linkiconarrowd
     cursor-pointer 
-    hover:underline
+    {{ $classA }} 
     {{-- add your custom class --}}
     "
 >
