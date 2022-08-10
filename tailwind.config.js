@@ -30,6 +30,26 @@ module.exports = {
         linkiconarrowd: '#000000',
         linktextsample: '#000000',
         linktextsampled: '#000000',
+
+        // btn
+        // form
+        tbtnform: "#ffffff",
+        tbtnformh: "#000000",
+        tbtnformd: "#000000",
+        tbtnformhd: "#000000",
+        bgbtnform: "#000000",
+        bgbtnformh: "#000000",
+        bgbtnformd: "#000000",
+        bgbtnformhd: "#000000",
+        // sample
+        tbtnsample: "#000000",
+        tbtnsampleh: "#000000",
+        tbtnsampled: "#000000",
+        tbtnsamplehd: "#000000",
+        bgbtnsample: "#000000",
+        bgbtnsampleh: "#000000",
+        bgbtnsampled: "#000000",
+        bgbtnsamplehd: "#000000",
       },
       fontSize: {
         // title
@@ -49,6 +69,10 @@ module.exports = {
         // link
         "s-linkiconarrow": "1rem",
         "s-linktextsample": "1rem",
+
+        // btn
+        "s-btnform": "1rem",
+        "s-btnsample": "1rem",
       },
     },
   },
