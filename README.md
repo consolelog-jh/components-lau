@@ -1,5 +1,86 @@
 # Components LAU
 
+## install tailwind  
+
+1. install tailwind  
+```shell
+# command
+$ npm install -D tailwindcss postcss autoprefixer  
+$ npx tailwindcss init -p
+```  
+
+2. copy / paste [`tailwind.config.js`](./tailwind.config.js)   
+3. copy / paste [`ressources/css/app.css`](./resources/css/app.css)  
+
+## server vite  
+
+1. copy / paste [`vite.config.js`](./vite.config.js)   
+
+2. add asset in html  
+```php
+// your layout
+
+<!DOCTYPE html>
+<html>
+    <head>
+        // add this for assets
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </head>
+    <body>
+    </body>
+</html>
+```  
+
+3. start server vite for assets of project  
+```shell
+$ npm run dev
+```  
+
+## install alpinejs  
+
+1. install  
+
+```shell
+$ npm install alpinejs
+```  
+
+2. add this in your `resources/js/app.js`  
+```js
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()
+```  
+
+## install unpolyjs  
+
+1. install  
+```shell
+$ npm install unpoly --save
+```  
+
+2. add this in your `resources/js/app.js`  
+```js
+import 'unpoly';
+import 'unpoly/unpoly.css';
+```
+
+## add mode dark  
+
+1. copy / paste `resources/js/darkmode.js`
+2. add this in `resources/js/app.js`  
+```js
+import DarkMode from'./darkmode';
+// when loading check mode dark with device
+//DarkMode.whenLoadingAddModeDarkIfExist()
+
+// when loading check mode dark without device
+DarkMode.whenLoadingAddModeDarkIfExist(false)
+
+// switch mode dark  
+DarkMode.switchModeDark()
+```  
+3. copy file `resources/views/components/btn/mode-dark.blade.php`
+
 ## Input  
 > change in `tailwind.config.js`  
 > colors : `inputbg`, `inputbgd`, `inputerror`,  
