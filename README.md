@@ -79,7 +79,7 @@ DarkMode.whenLoadingAddModeDarkIfExist(false)
 // switch mode dark  
 DarkMode.switchModeDark()
 ```  
-3. copy file `resources/views/components/btn/mode-dark.blade.php`
+3. copy file `resources/views/components/btns/mode-dark.blade.php`
 
 ## Input  
 > change in `tailwind.config.js`  
